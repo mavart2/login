@@ -1,12 +1,19 @@
 * {
-  padding: 0;
   margin: 0;
-  
+  padding: 0;
+  box-sizing: border-box;
 }
+
+body {
+  background-color: #000;
+  font-family: Arial, sans-serif;
+}
+
+/* ---------------- MAIN SECTION ---------------- */
 main {
   width: 100%;
-  height: 100vh;
-  background-image: url("./image/paisaje\ en\ tonos\ azules\ para\ un\ background.png");
+  min-height: 100vh;
+  background-image: url("../assets/image/paisaje en tonos azules para un background.png");
   background-position: center;
   background-size: cover;
   display: flex;
@@ -14,12 +21,14 @@ main {
   align-items: center;
   position: relative;
 }
+
 main::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-color: rgba(43, 3, 116, 0.5); /* Ajusta la opacidad */
+  background-color: rgba(43, 3, 116, 0.5);
 }
+
 section {
   width: 33%;
   max-width: 500px;
@@ -36,25 +45,18 @@ section {
   transition: all 0.3s ease;
 }
 
-
-
-/* Tablet */
 @media (max-width: 1024px) {
   section {
     width: 80%;
     min-height: 600px;
-
   }
 }
 
-/* Móvil */
 @media (max-width: 768px) {
   section {
     width: 95%;
-    height: auto; /* Ajuste automático según contenido */
-    min-height: unset; /* Eliminar mínimo de altura */
-    
-    
+    height: auto;
+    min-height: unset;
   }
 }
 
@@ -78,14 +80,27 @@ section {
   color: aliceblue;
   border-radius: 19px 19px 0 0;
 }
+
+.title h1 {
+  padding-top: 14px;
+  font-size: 3rem;
+  color: aliceblue;
+}
+
+.title h1::first-letter {
+  color: #ff0000;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
 .title p {
   font-size: 18px;
   padding: 20px 0;
   width: 70%;
 }
+
 .user-login {
   width: 100%;
-  height: 60%;
   font-size: 25px;
   text-align: center;
   margin-top: 30px;
@@ -93,76 +108,104 @@ section {
   flex-direction: column;
   align-items: center;
 }
+
 form {
   width: 60%;
 }
-.container-user {
-  display: flex;
-  background-color: #6c53cf;
-  height: 30px;
-  padding: 5px 10px;
-  gap: 10px;
-  border-radius: 20px;
-  width: 100%;
-  margin-top: 20px;
-}
+
+.container-user,
 .password {
   display: flex;
   background-color: #6c53cf;
   height: 30px;
-  padding: 5px 10px;
+  padding: 1px 10px;
   gap: 10px;
   border-radius: 20px;
   width: 100%;
   margin-top: 20px;
 }
 
-.remember {
-  display: flex;
-  font-size: 16px;
-  justify-content: space-between;
-  align-items: center;
-  height: 20px;
-  margin-top: 10px;
-}
 .container-user input {
   width: 120px;
 }
+
 .password input {
   width: 300px;
 }
+
 input {
   outline: none;
   border: none;
   background: none;
+  color: white;
 }
+
 input::placeholder {
   color: aliceblue;
 }
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent; /* o un color si quieres fondo */
+  width: 30px;
+  height: 30px;
+}
+.lock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent; /* o un color si quieres fondo */
+  width: 30px;
+  height: 30px;
+}
+
+.user i {
+  font-size: 18px;
+}
+.lock i {
+  font-size: 18px;
+}
+
 i {
   color: aliceblue;
 }
+
+.remember {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+  height: 20px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+.check {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
 .submit {
   margin-top: 60px;
+  width: 100%;
 }
+
 .submit button {
   border-radius: 20px;
   background: linear-gradient(to bottom, #2b06c1, #6c53cf);
   width: 100%;
-  height: 40px;
   height: 40px;
   border: none;
   color: aliceblue;
   font-size: 20px;
   font-weight: bold;
   cursor: pointer;
-  margin-bottom: 20%;
-  
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 10%;
 }
+
 .submit button:hover {
-   background: linear-gradient(to bottom, #025d05, #037c33);
-
-
+  background: linear-gradient(to bottom, #025d05, #037c33);
 }
-
