@@ -1,0 +1,161 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+main {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./image/paisaje\ en\ tonos\ azules\ para\ un\ background.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+main::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(43, 3, 116, 0.5); /* Ajusta la opacidad */
+}
+section {
+  width: 33%;
+  max-width: 500px;
+  min-width: 300px;
+  height: auto;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(219, 220, 222);
+  border-radius: 20px;
+  box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+  transition: all 0.3s ease;
+}
+
+
+
+/* Tablet */
+@media (max-width: 1024px) {
+  section {
+    width: 80%;
+  }
+}
+
+/* Móvil */
+@media (max-width: 768px) {
+  section {
+    width: 95%;
+    
+  }
+}
+
+.avatar img {
+  padding-top: 15px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.title {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  background: linear-gradient(to bottom, #2b06c1, #6c53cf);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+  border-radius: 19px 19px 0 0;
+}
+.title p {
+  font-size: 18px;
+  padding: 20px 0;
+  width: 70%;
+}
+.user-login {
+  width: 100%;
+  height: 60%;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+form {
+  width: 60%;
+}
+.container-user {
+  display: flex;
+  background-color: #6c53cf;
+  height: 30px;
+  padding: 5px 10px;
+  gap: 10px;
+  border-radius: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+.password {
+  display: flex;
+  background-color: #6c53cf;
+  height: 30px;
+  padding: 5px 10px;
+  gap: 10px;
+  border-radius: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.remember {
+  display: flex;
+  font-size: 16px;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  margin-top: 10px;
+}
+.container-user input {
+  width: 120px;
+}
+.password input {
+  width: 300px;
+}
+input {
+  outline: none;
+  border: none;
+  background: none;
+}
+input::placeholder {
+  color: aliceblue;
+}
+i {
+  color: aliceblue;
+}
+.submit {
+  margin-top: 60px;
+}
+.submit button {
+  border-radius: 20px;
+  background: linear-gradient(to bottom, #2b06c1, #6c53cf);
+  width: 100%;
+  height: 40px;
+  height: 40px;
+  border: none;
+  color: aliceblue;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+.submit button:hover {
+   background: linear-gradient(to bottom, #025d05, #037c33);
+
+
+}
+
