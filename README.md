@@ -1,6 +1,6 @@
 ## Hi there 👋
 
-<h1 align="center">Hola! este es un 👋, Logins</h1>
+<h1 align="center">Hola! este es un 👋, Login</h1>
 <h3 align="center">Formulario de inicio de sesión con un fondo degradado y estilo moderno. Ideal para proyectos web que buscan destacar con un diseño minimalista y profesional. </h3>
 
 - 👨‍💻 All of my projects are available at [https://mavart2.github.io/portafolio/](https://mavart2.github.io/portafolio/)
